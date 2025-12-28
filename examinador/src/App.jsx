@@ -1,5 +1,5 @@
 import { Toaster } from 'sonner'
-import ResumeScanner from '@/pages/ResumeScanner'
+import ResumeScanner from '@/Pages/ResumeScanner.jsx'
 
 export default function App() {
   return (

@@ -1,13 +1,13 @@
 import { useRef, useState } from 'react'
 
-import Header from '@/Components/resume/Header'
-import UploadCard from '@/Components/resume/UploadCard'
-import ResultSummary from '@/Components/resume/ResultSummary'
-import JsonViewer from '@/Components/resume/JsonViewer'
-import LogsSection from '@/Components/resume/LogsSection'
-import LoadingState from '@/Components/resume/LoadingState'
+import Header from '@/Components/resume/Header.jsx'
+import UploadCard from '@/Components/resume/UploadCard.jsx'
+import ResultSummary from '@/Components/resume/ResultSummary.jsx'
+import JsonViewer from '@/Components/resume/JsonViewer.jsx'
+import LogsSection from '@/Components/resume/LogsSection.jsx'
+import LoadingState from '@/Components/resume/LoadingState.jsx'
 
-import { extractResume } from '@/api/resumeExtractor'
+import { extractResume } from '@/api/resumeExtractor.js'
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 const withTimeout = (promise, ms, message) =>
@@ -17,7 +17,7 @@ const withTimeout = (promise, ms, message) =>
   ])
 
 export default function ResumeScanner() {
-  const [view, setView] = useState('upload') // upload | loading | result
+  const [view, setView] = useState('upload') 
 
   const [file, setFile] = useState(null)
   const [error, setError] = useState(null)
