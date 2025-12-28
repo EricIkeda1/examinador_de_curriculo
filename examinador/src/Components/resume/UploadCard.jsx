@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import { Upload, FileText, X, AlertCircle } from 'lucide-react'
-import { Button } from '@/components/ui/button'
+import { Button } from '@/Components/ui/button'
 import { cn } from '@/lib/utils'
 
 export default function UploadCard({ file, setFile, onAnalyze, isLoading, error }) {
